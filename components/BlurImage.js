@@ -5,7 +5,6 @@ export default function BlurImage({ image }) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <a href={image.href} className="group">
       <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
         <Image
           alt=""
@@ -22,6 +21,5 @@ export default function BlurImage({ image }) {
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-    </a>
   );
 }
